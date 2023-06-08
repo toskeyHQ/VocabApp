@@ -91,17 +91,12 @@ def newDeckHilfsmethode():
                 if ("newDeck" + str(4) + ".txt" in txtfiles):
                     if ("newDeck" + str(5) + ".txt" in txtfiles):
                         if ("newDeck" + str(6) + ".txt" in txtfiles):
-                            return "newDeck" + str(6 + 1) + ".txt"
+                            raise Exception("Too many Docs with the same name")
                         return "newDeck" + str(5 + 1) + ".txt"
                     return "newDeck" + str(4 + 1) + ".txt"
                 return "newDeck" + str(3 + 1) + ".txt"
             return "newDeck" + str(2 + 1) + ".txt"
         return "newDeck"+str(1+1)+".txt"
-
-
-
-
-
     return "newDeck.txt"
 
 def editCurrentfile(deck):
